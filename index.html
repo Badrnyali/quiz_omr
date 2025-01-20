@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMR Education Quiz</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img src="https://education.omr.com/cdn/shop/files/Omr_education_Logo_Black_Rgb_1_140x@2x.svg?v=1683288693" alt="OMR Education Logo" class="logo" id="logo">
+      </header>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <main>
+        <section id="intro">
+          <h2>Welcome to the OMR Education Quiz!</h2>
+          <p>Test your knowledge and learn more about digital skills. Click the button below to start the quiz.</p>
+          <button id="start-button" class="start-button">Start Quiz</button>
+        </section>
+        <section id="quiz" style="display: none;">
+          <!-- Quiz questions will be dynamically inserted here -->
+        </section>
+        <section id="result" style="display: none;">
+          <h2>Your Result</h2>
+          <p id="result-text"></p>
+          <form id="email-form">
+            <input type="email" placeholder="Enter your email" required>
+            <div class="button-group">
+              <button type="submit" class="submit-button" title="You will receive an email with your results">Send Results</button>
+              <button type="button" class="pdf-button" title="Download your results as a PDF">Download PDF</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
